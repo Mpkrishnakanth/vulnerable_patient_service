@@ -120,3 +120,48 @@ def delete_user(user_id):
     # Returns success but does NOT actually delete
     logger.info(f"Delete requested for user {user_id}")
     return {"status": "success"}
+
+
+
+# ============================================================
+#  RegXplain Compliance Audit
+#  Scanned   : 2026-03-16 08:48:13
+#  Violations: 9
+# ------------------------------------------------------------
+#  [1] SQL Injection | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in get_db
+#  [2] SQL Injection | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in get_patient
+#  [3] SQL Injection | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in register_user
+#  [4] SQL Injection | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in get_medical_record
+#  [5] Unencrypted Transmission | Line 2 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 2 in send_report
+#  [6] SQL Injection | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in store_payment
+#  [7] Weak Cryptography | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in hash_password_weak
+#  [8] Debug Mode Enabled | Line 4 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 4 in start_app
+#  [9] SQL Injection | Line 1 | High
+#      Regulation : N/A (0%)
+#      Reason     : N/A
+#      Location   : Line 1 in get_patient_profile
+# ============================================================
